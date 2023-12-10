@@ -25,19 +25,6 @@ If you set UseFuel=1 you need to put wood in the inventory of the shield
 Fuel option is better than decay...
 Fuel Used WOOD !
 
-https://github.com/Olrik-WP/SafeBase] Code Source 2.1
-
-★ Version 2.2 - 08/12/2023
-
-Feature request (Add some decay features) 
-if you find that it's too convenient not to use fuel and you want the players to use resources this is the best solution which can be activated or not in the ini
-Add tow option in the INI:
-
-UseFuel=1 
-FuelConsumptionMultiplier=600.0 
-with 600.0 Multiplier at shield radius 10x it consume 1 ressource of wood in 1 minute
-If you set UseFuel=1 you need to put wood in the inventory of the shield
-
 ★ Version 2.1 - 07/12/2023
 
 Correction of the shield which lights up with an opacity of 0, now at 0.8 by default
@@ -64,9 +51,7 @@ Adds a new engram for a modified Tek Shield that is immune to damage, does not r
 Clean and completely stackable.
 Shield max size is configurable. Default max size is the same as a tek shield.
 Configurable limit on number of shields per tribe. Default is one.
-
 Shield opacity is adjustable to 0.0 at 1.0 This means it won't look horrible in dark places, like the Aberration map.
-
 The shield ignores babies ! Baby dinos will no longer be thrust out into oblivion.
 Does not require access to tek.
 Does not require fuel.
@@ -92,7 +77,6 @@ Integer
 shields use fuel or not (wood used as fuel)
 Default is 0
 0 or 1
-
 
 FuelConsumptionMultiplier
 Float
@@ -128,16 +112,4 @@ ConfigOverrideItemCraftingCosts=(ItemClassString="SB_PrimalItemStructure_Shield_
 
 ##### Auto Unlock
 EngramEntryAutoUnlocks=(EngramClassName="B_EngramEntry_Shield_C",LevelToAutoUnlock=0)
-=======
 
-##### Spawn Code
-cheat giveitem "Blueprint'/Game/Mods/SafeBase/Items/SB_PrimalItemStructure_Shield.SB_PrimalItemStructure_Shield'" 1 1 0
-
-##### Engram Override
-OverrideNamedEngramEntries=(EngramClassName="SB_EngramEntry_Shield_C",EngramLevelRequirement=0,EngramPointsCost=0,EngramHidden=False,RemoveEngramPreReq=False)
-
-##### Crafting Cost Override
-ConfigOverrideItemCraftingCosts=(ItemClassString="SB_PrimalItemStructure_Shield_C",BaseCraftingResourceRequirements=((ResourceItemTypeString="PrimalItemResource_Thatch_C",BaseResourceRequirement=1.0,bCraftingRequireExactResourceType=True)))
-
-##### Auto Unlock
-EngramEntryAutoUnlocks=(EngramClassName="B_EngramEntry_Shield_C",LevelToAutoUnlock=0)
